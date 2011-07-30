@@ -33,7 +33,7 @@ two functions to know:
     
     Example:
     
-    ```
+    ```javascript
     // contents of js/downloader/popup.js
     module("myApp.downloader.popup", function (exports) {
       // Both "this" and "exports" are aliases to "myApp.downloader.popup" (created from the first argument).
@@ -89,7 +89,7 @@ two functions to know:
     
     Examples:
     
-    ```
+    ```html
     <!-- portion of index.html -->
     <script src="modulize.js"></script>
     <script>
@@ -107,7 +107,7 @@ two functions to know:
     </script>
     ```
     
-    ```
+    ```javascript
     // portion of someFile.js
     require("js/downloader/...", ".../index", ".../popup", function () {
       // This function will run as soon as "js/downloader/index.js" and "js/downloader/popup.js" have loaded
