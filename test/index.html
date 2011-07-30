@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Modules!</title>
+  <script src="../src/lib.js"></script>
+  <script src="../src/module.js"></script>
+
+  <script>
+    module.require("jquery-1.6.2", "index", function () {
+      appName.index.initialize();
+    })
+    .require("subdirectory/...",
+      ".../thing",
+      ".../further/wow.js",
+      function () {
+        appName.thing.doSomething();
+        newObject.wow.wow();
+      }
+    );
+  </script>
+
+</head>
+<body>
+  <h1>Something</h1>
+</body>
+</html>
