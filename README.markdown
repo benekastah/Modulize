@@ -3,7 +3,7 @@
 ===========
 
 
-Modulize is a little library that allows you to lazy-load (read: asynchronous) your 
+Modulize is a little library that allows you to lazy-load (*__read__: asynchronous*) your 
 javascript files as modules. Think CommonJS modules optimized for the browser. This 
 allows for improved load times and a smooth experience 
 for site users. It is extremely simple and easy to learn, yet it has an expressive 
