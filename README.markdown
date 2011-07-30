@@ -32,6 +32,7 @@ two functions to know:
                 both `this` and the first argument of your function. See example below.
     
     Example:
+    
     ```
     // contents of js/downloader/popup.js
     module("myApp.downloader.popup", function (exports) {
@@ -87,6 +88,7 @@ two functions to know:
             call have loaded properly.
     
     Examples:
+    
     ```
     <!-- portion of index.html -->
     <script src="modulize.js"></script>
