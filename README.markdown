@@ -1,5 +1,4 @@
-Modulize
-=================
-
-##Bringing separation of concerns to your client-side javascript
+#Modulize
+###Bringing separation of concerns to your client-side javascript
+===========
 
