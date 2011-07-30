@@ -1,6 +1,5 @@
 #Modulize
 ###Bringing separation of concerns to your client-side javascript
-===========
 
 
 Modulize is a little library that allows you to lazy-load (*__read__: asynchronous*) your 
