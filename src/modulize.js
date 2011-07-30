@@ -1,6 +1,19 @@
 (function () {
+  
+  // Make sure we can use function binding
+  if (Function.prototype.bind == null) {
+    Function.prototype.bind = function () {
+      var args = [];
+      // TODO does this line work well enough in older browsers?
+      args.push.apply(args, arguments);
+      var scope = args.shift();
+      var fn = this;
+      
+      return function () { return fn.apply(scope, args) };
+    }
+  }
 
-  function module(namespace, mod_fn) {
+  function module(namespace, moduleBody) {
     var ns,
     // start is the starting point for defining the namespace object
     start = window,
@@ -29,7 +42,7 @@
     ns_obj = place;
     
     // Call our module body with our namespace object as the scope and first argument
-    mod_fn.call(ns_obj, ns_obj);
+    moduleBody.call(ns_obj, ns_obj);
   }
   
   module.require = function ( /* ...src's, callback */ ) {
@@ -75,6 +88,7 @@
       mod = document.createElement('script');
       mod.id = getUniqueId("module");
       mod.src = src;
+      mod.async = true;
       // Store some info. The only thing used so far is 'complete'
       result = {
         id: mod.id,

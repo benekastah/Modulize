@@ -118,3 +118,15 @@ There are currently only two functions to know:
       // etc...
     });
     ```
+    
+##What if I need help?
+
+Feel free to post an issue in the issue tracker here. If you just have a question about something
+not covered here, don't hesitate to message me here on github.
+
+
+##Can I contribute?
+
+Absolutely. Head over to the issue tracker to see what we're working on. Also, we always want
+to make sure that `modulize.js` will load and work as quickly as possible. Feel free to optimize
+the code (commenting freely on the esoteric parts).
