@@ -9,7 +9,6 @@ allows for improved load times and a smooth experience
 for site users. It is extremely simple and easy to learn, yet it has an expressive 
 syntax to make it easy for you to get what you want from it.
 
------------
 
 ##How it works
 
