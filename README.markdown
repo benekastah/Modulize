@@ -7,8 +7,13 @@ Modulize is a little library that allows you to lazy-load (*__read__: asynchrono
 javascript files as modules. Think CommonJS modules optimized for the browser. This 
 allows for improved load times and a smooth experience 
 for site users. It is extremely simple and easy to learn, yet it has an expressive 
-syntax to make it easy for you to get what you want from it. There are currently only 
-two functions to know:
+syntax to make it easy for you to get what you want from it.
+
+-----------
+
+##How it works
+
+There are currently only two functions to know:
 
 1.  `module`
     
@@ -31,7 +36,7 @@ two functions to know:
             2.  It aliases the namespace object created from the first argument to
                 both `this` and the first argument of your function. See example below.
     
-    Example:
+    ***Example:***
     
     ```javascript
     // contents of js/downloader/popup.js
@@ -87,7 +92,7 @@ two functions to know:
             This code will be run immediately after *all* the files in the current function
             call have loaded properly.
     
-    Examples:
+    ***Examples:***
     
     ```html
     <!-- portion of index.html -->
