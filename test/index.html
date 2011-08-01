@@ -7,9 +7,10 @@
     module.require("jquery-1.6.2", "index", function () {
       appName.index.initialize();
     })
-    .require("subdirectory/...",
+    require("subdirectory/...",
       ".../thing",
       ".../further/wow.js",
+		"jquery-1.6.2",
       function () {
         appName.thing.doSomething();
         newObject.wow.wow();
